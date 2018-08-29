@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Women In X</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    
+    <script  src="js/index.js"></script>
+
+</head>
+
+<body>
+
+<span> <h2>Women in X Directory</h2></span>
+
+
+  <form method="post" action="#">
+
+
+
+        <table>
+
+            <col width="100">
+            <col width="500">
+           
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" name="name" id="name" class = "info-box" required> </td>
+            </tr>
+            <tr>
+
+                <td><label>Profile Picture</label></td>
+                <td>
+                  <div class="container">
+                  <br /> 
+                  <div class="profile">
+                    <div class="photo">
+                      <input type="file" accept="image/*">
+                      <div class="photo__helper">
+                        <div class="photo__frame photo__frame--circle">
+                          <canvas class="photo__canvas"></canvas>
+                          <div class="message is-empty">
+                            <p class="message--desktop">Drop your photo here or browse your computer.</p>
+                            <p class="message--mobile">Tap here to select your picture.</p>
+                          </div>
+                          <div class="message is-loading">
+                           <i class="fa fa-2x fa-spin fa-spinner"></i>
+                          </div>
+                          <div class="message is-dragover">
+                            <i class="fa fa-2x fa-cloud-upload"></i>
+                            <p>Drop your photo</p>
+                          </div>
+                          <div class="message is-wrong-file-type">
+                            <p>Only images allowed.</p>
+                            <p class="message--desktop">Drop your photo here or browse your computer.</p>
+                            <p class="message--mobile">Tap here to select your picture.</p>
+                          </div>
+                          <div class="message is-wrong-image-size">
+                            <p>Your photo must be larger than 350px.</p>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="photo__options hide">
+                    <div class="photo__zoom">
+                      <input type="range" class="zoom-handler">
+                    </div>
+                    <a href="javascript:;" class="remove"><i class="fa fa-trash"></i></a>
+                    </div>
+                  </div>
+                  </div>
+
+                  <hr>
+                  <button type="button" id="previewBtn">Preview</button>
+                  <hr>
+                  <img src="" alt="" class="preview">
+                  <img src="" alt="" class="preview preview--rounded">
+                </td>
+              </tr>
+
+            <tr>
+                <td><label htmlFor="name" >Pronoun</label></td>
+                <td><input type="text" name="Pronoun" id="Pronoun" class="info-box" required></td>
+             </tr>
+
+             <tr>
+                <td><label htmlFor="location"> Currently in (location)</label></td>
+                <td>
+                  <select id="citySel" size="1">
+                <option value="" selected="selected">-- Select City --</option>
+                </select>
+
+              </td>
+             </tr>
+
+             <tr>
+                <td><label htmlFor="major"> I study </label></td>
+                <td>
+                  <select id="majorSel" size="1">
+                <option value="" selected="selected">-- Select Major--</option>
+                </select>
+
+              </td>
+             </tr>
+
+             <tr>
+              <td><label htmlFor="techInterest">Tech fields of interest (ex. AI)</label></td>
+              <td><textarea name="techInterest" id="techInterest" class="text-box" rows="10" cols="25" required></textarea></td>
+             </tr>
+
+             <tr>
+              <td><label htmlFor="Interest"> Let's talk about (up to 3 things) </label></td>
+              <td><textarea name="Interest" id="Interest" class="text-box" rows="10" cols="25" required></textarea></td>
+             </tr>
+
+             <tr>
+              <td><label htmlFor="gender"> I identify as </label></td>
+              <td> <input type= "radio" id="Female" name="gender" required=""> 
+                <label for="Female">Female</label> 
+                   <input type= "radio" id="Male" name="gender" > 
+                <label for="Male">Male</label>
+                   <input type= "radio" id="Other" name="gender" > 
+                <label for="Other">Other</label>
+              <input type= "radio" id="none" name="gender"> 
+                <label for="none">Prefer not to say</label>
+            </tr>
+
+             <tr>
+              <td><label>Fun Fact About Yourself</label></td>
+              <td><input type="text" name="fact" id="fact" class="info-box" ></td>
+
+             </tr>
+
+             <tr>
+              <td>Linkedin/Twitter (Optional) </td>
+              <td><input type="text" name="socialMedia" id="socialMedia" class="info-box"></td>
+             </tr>
+            
+
+        </table>
+
+        <div class="actions">
+            <label htmlFor= "actions"> </label>
+            <input type="submit" value="Submit" id="special">
+        </div>
+
+    </form> 
+  
+
+
+</body>
+
+</html>
+
+
+
+
+
